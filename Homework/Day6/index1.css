@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.father {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: 1s Loading infinite ease-in-out;
+}
+.box {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+@keyframes Loading {
+  0% {
+    transform: none;
+  }
+  30% {
+    transform: rotate(0.5turn);
+  }
+  50% {
+    transform: rotate(0.5turn);
+  }
+  80% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
